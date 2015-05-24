@@ -1,0 +1,24 @@
+{
+  "name": "mkcee.com",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkc188/mkcee.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkc188/mkcee.com/issues"
+  },
+  "homepage": "https://github.com/mkc188/mkcee.com",
+  "dependencies": {
+    "express": "^4.12.4",
+    "taunus": "^6.1.1",
+    "taunus-express": "^3.0.0"
+  }
+}
