@@ -18,8 +18,12 @@
   "homepage": "https://github.com/mkc188/mkcee.com",
   "dependencies": {
     "express": "^4.12.4",
-    "jadum": "^1.4.0",
+    "serve-static": "^1.9.3",
     "taunus": "^6.1.1",
     "taunus-express": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1",
+    "jadum": "^1.4.0"
   }
 }
