@@ -1,23 +1,10 @@
-var jade = require("jadum/runtime");
-module.exports = function index(locals) {
-var jade_debug = [{ lineno: 1, filename: "views/home/index.jade" }];
-try {
-var buf = [];
-var jade_mixins = {};
-var jade_interp;
-
-jade_debug.unshift({ lineno: 0, filename: "views/home/index.jade" });
-jade_debug.unshift({ lineno: 1, filename: "views/home/index.jade" });
-buf.push("<p>");
-jade_debug.unshift({ lineno: undefined, filename: jade_debug[0].filename });
-jade_debug.unshift({ lineno: 1, filename: jade_debug[0].filename });
-buf.push("Hello Taunus!");
-jade_debug.shift();
-jade_debug.shift();
-buf.push("</p>");
-jade_debug.shift();
-jade_debug.shift();;return buf.join("");
-} catch (err) {
-  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "p Hello Taunus!\n");
-}
-}
+(function(){function index(it
+/**/) {
+var out='<p>Hello Taunus!</p>';return out;
+}var itself=index, _encodeHTML=(function (doNotSkipEncoded) {
+		var encodeHTMLRules = { "&": "&#38;", "<": "&#60;", ">": "&#62;", '"': "&#34;", "'": "&#39;", "/": "&#47;" },
+			matchHTML = doNotSkipEncoded ? /[&<>"'\/]/g : /&(?!#?\w+;)|<|>|"|'|\//g;
+		return function(code) {
+			return code ? code.toString().replace(matchHTML, function(m) {return encodeHTMLRules[m] || m;}) : "";
+		};
+	}());if(typeof module!=='undefined' && module.exports) module.exports=itself;else if(typeof define==='function')define(function(){return itself;});else {_page.render=_page.render||{};_page.render['index']=itself;}}());
