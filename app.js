@@ -23,5 +23,12 @@ var options = {
 };
 
 app.use(serveStatic('.bin/public'));
+if (process.env.NODE_ENV == 'production') {
+  app.use(serveStatic('dist'));
+} else{
+  app.use(serveStatic('.tmp'));
+  app.use(serveStatic('app'));
+}
+app.use('/bower_components', serveStatic('bower_components'));
 taunusExpress(taunus, app, options);
 app.listen(3000);

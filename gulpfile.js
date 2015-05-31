@@ -183,9 +183,10 @@ gulp.task('serve:dist', function () {
   browserSync({
     notify: false,
     port: 9000,
-    server: {
-      baseDir: ['dist']
-    }
+    proxy: 'http://localhost:3000',
+    // server: {
+    //   baseDir: ['dist']
+    // }
   });
 });
 
